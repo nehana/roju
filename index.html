@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Roju · రోజు — a daily Telugu game</title>
+  <meta name="description" content="A daily Telugu word game for the diaspora: word of the day, quiz, and letter match." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Telugu:wght@400;700&family=DM+Sans:wght@400;600;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='80'>🪔</text></svg>" />
+</head>
+<body>
+  <header>
+    <h1>Roju <span class="te">రోజు</span></h1>
+    <p class="sub">one little dose of Telugu, every day</p>
+    <div class="meta"><span id="date"></span> · <span id="streak"></span></div>
+  </header>
+
+  <nav>
+    <button class="tab active" data-view="word">Word of the Day</button>
+    <button class="tab" data-view="quiz">Quiz</button>
+    <button class="tab" data-view="letters">Akshara Match</button>
+  </nav>
+
+  <main>
+    <section id="view-word" class="view active"></section>
+    <section id="view-quiz" class="view"></section>
+    <section id="view-letters" class="view"></section>
+  </main>
+
+  <div id="toast"></div>
+  <footer>New puzzles at midnight · <a href="https://github.com/" id="gh">add words on GitHub</a></footer>
+
+  <script src="words.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
